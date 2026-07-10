@@ -144,8 +144,44 @@ a.btn:hover::after,.btn:hover::after{left:130%}
 .hero::before{content:"";position:absolute;top:-40%;left:-20%;width:70%;height:180%;background:radial-gradient(closest-side,rgba(255,230,0,.07),transparent);pointer-events:none}
 
 /* fin wow */
+
+/* ===== FINITION GRANDE MARQUE ===== */
+::selection{background:#ffe600;color:#fff}
+h1,h2,h3{text-wrap:balance}
+p,li,figcaption{text-wrap:pretty}
+section[id]{scroll-margin-top:86px}
+:focus-visible{outline:3px solid #ffe600;outline-offset:3px;border-radius:4px}
+::-webkit-scrollbar{width:11px}
+::-webkit-scrollbar-track{background:transparent}
+::-webkit-scrollbar-thumb{background:#10243e;border-radius:8px;border:3px solid #fff}
+html{scrollbar-color:#10243e transparent;scrollbar-width:thin}
+/* entrée de page : le héro se met en scène */
+@media (prefers-reduced-motion: no-preference){
+.hero .wrap>*:first-child>*{animation:entree .8s cubic-bezier(.2,.7,.2,1) both}
+.hero .wrap>*:first-child>*:nth-child(2){animation-delay:.12s}
+.hero .wrap>*:first-child>*:nth-child(3){animation-delay:.24s}
+.hero .wrap>*:first-child>*:nth-child(4){animation-delay:.36s}
+.hero .wrap>*:nth-child(2){animation:entree 1s cubic-bezier(.2,.7,.2,1) .3s both}
+@keyframes entree{from{opacity:0;transform:translateY(26px)}to{opacity:1;transform:none}}
+}
+.marquee:hover .defile{animation-play-state:paused}
+
+/* galerie harmonisée : recadrage uniforme, sauf affiches */
+.planches .planche img{aspect-ratio:4/3;object-fit:cover;object-position:center 30%}
+.planches .planche img[src*="affiche"]{aspect-ratio:auto;object-fit:contain;background:#fff}
+
+.wrap p{max-width:72ch}
+.point p,.format p,.etape p{max-width:none}
+.planche,.citation,.etape,.format{box-shadow:0 1px 2px rgba(16,36,62,.05),0 6px 18px rgba(16,36,62,.07)}
+.planche:hover{box-shadow:0 2px 4px rgba(16,36,62,.08),0 18px 40px rgba(16,36,62,.16)}
+.num{letter-spacing:3px}
+.titre{letter-spacing:.2px}
+summary{letter-spacing:.2px}
+
+/* fin finition */
 </style>
 <style id="wow-css"></style>
+<style id="polish-css"></style>
 </head>
 <body>
 
