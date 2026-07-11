@@ -215,6 +215,15 @@ body{padding-bottom:54px}
 }
 
 .reveal.vu{transition:opacity .25s ease,transform .22s cubic-bezier(.2,.7,.2,1);transition-delay:0s}
+
+.vids{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:24px}
+.vid .ratio{position:relative;aspect-ratio:16/9;background:#000;border-radius:6px;overflow:hidden;box-shadow:0 14px 34px rgba(16,36,62,.25)}
+.vid p{margin-top:10px;font-weight:600;font-size:14px}
+.ytf{position:absolute;inset:0;width:100%;height:100%;border:0;padding:0;cursor:pointer;background:#000;display:block}
+.ytf img{width:100%;height:100%;object-fit:cover;display:block;opacity:.92}
+.ytp{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:70px;height:50px;background:var(--fluo);border-radius:6px;display:flex;align-items:center;justify-content:center;box-shadow:0 6px 18px rgba(0,0,0,.5)}
+.ytp::after{content:"";width:0;height:0;border-left:19px solid var(--nuit);border-top:12px solid transparent;border-bottom:12px solid transparent;margin-left:5px}
+.ytf:hover .ytp{background:var(--lagon)}.ytf:hover .ytp::after{border-left-color:#fff}
 /* fin couture */
 </style>
 <style id="wow-css"></style>
@@ -303,6 +312,17 @@ body{padding-bottom:54px}
   </div>
 </section>
 
+<section id="videos" style="background:var(--nuit)">
+  <div class="wrap">
+    <span class="num" style="color:var(--fluo)">04 bis — En vidéo</span>
+    <h2 class="titre" style="color:#fff">Nos séminaires <span style="color:var(--fluo)">en mouvement</span></h2>
+    <p class="sub" style="color:#c9d4e2">Parce qu'une plénière réussie, ça se voit : extraits filmés de nos animations de séminaires et journées d'entreprise à La Réunion.</p>
+    <div class="vids">
+      <div class="vid"><div class="ratio"><button class="ytf" data-id="Ts1lpUjX-EU" aria-label="Lire la vidéo : Animation de séminaire Crédit Moderne par Pull Up Événements"><img src="https://i.ytimg.com/vi/Ts1lpUjX-EU/hqdefault.jpg" alt="Animation de séminaire Crédit Moderne à La Réunion — vidéo" loading="lazy" decoding="async"><span class="ytp" aria-hidden="true"></span></button></div><p style="color:#c9d4e2">Animation de séminaire pour Crédit Moderne</p></div>
+      <div class="vid"><div class="ratio"><button class="ytf" data-id="ewk7j3iCxBA" aria-label="Lire la vidéo : Journée d'intégration IAE 2025 par Pull Up Événements"><img src="https://i.ytimg.com/vi/ewk7j3iCxBA/hqdefault.jpg" alt="Journée d'intégration IAE 2025 à La Réunion — vidéo" loading="lazy" decoding="async"><span class="ytp" aria-hidden="true"></span></button></div><p style="color:#c9d4e2">Journée d'intégration IAE 2025 : le grand format</p></div>
+    </div>
+  </div>
+</section>
 <section class="avis" id="avis">
   <div class="wrap">
     <span class="num">05 — Ils l'ont vécu</span>
@@ -335,6 +355,10 @@ body{padding-bottom:54px}
     <h2 class="titre">Des séminaires dans <span class="surligne">toute La Réunion</span></h2>
     <p>Nous organisons vos séminaires d'entreprise partout à La Réunion : <b>Saint-Gilles</b> et l'Ouest pour les cadres tropicaux et les vues mer, <b>Saint-Denis</b> pour les conventions et journées professionnelles, <b>Saint-Pierre</b> et le Sud pour les domaines authentiques, et les Hauts — cirques, forêts, cases créoles — pour les séminaires au vert qui marquent les esprits. Nous connaissons les lieux, leurs capacités, leurs accès et leurs contraintes techniques.</p>
     <p style="margin-top:14px">Et parce qu'un séminaire réussi ne s'arrête pas à la plénière, la même équipe orchestre le <a href="https://teambuilding974.re/">team building de l'après-midi</a>, l'<a href="https://hotesse-reunion.re/">accueil par des hôtesses professionnelles</a>, la <a href="https://pullup.re/soiree-dentreprise/">soirée d'entreprise</a> de clôture — et même l'<a href="https://animationenfant974.re/">espace enfants</a> si vos collaborateurs viennent en famille. Un seul interlocuteur, 9 ans d'expérience, et la logistique d'une agence qui organise des événements toute l'année : c'est ce qui fait la différence entre un séminaire qui se passe bien et un séminaire dont on parle encore.</p>
+    <h3 style="font-family:'Fraunces',serif;font-size:24px;margin:26px 0 8px">Quelle région pour votre séminaire ?</h3>
+    <p><b>L'Ouest</b> (Saint-Gilles, Saint-Paul, La Saline) concentre les cadres balnéaires : vue lagon, hôtels de groupe, plages pour le team building de l'après-midi — le choix naturel des incentives et des groupes venus de métropole. <b>Le Nord</b> (Saint-Denis, Sainte-Marie) joue la carte de l'efficacité : salles urbaines équipées, proximité de l'aéroport, idéal pour les conventions d'une journée. <b>Le Sud</b> (Saint-Pierre, Le Tampon) offre des domaines authentiques et un excellent rapport qualité-prix pour les journées d'entreprise. <b>Les Hauts</b> (Plaine des Palmistes, cirques, forêts) sont l'arme secrète des codirs et séminaires stratégiques : fraîcheur, silence, zéro distraction — les idées y poussent mieux.</p>
+    <h3 style="font-family:'Fraunces',serif;font-size:24px;margin:26px 0 8px">Les dernières 48 heures, vues de l'intérieur</h3>
+    <p><b>J-1</b> : notre équipe monte et teste tout — sonorisation, micros, écrans, lumière, signalétique, plan de salle — puis répète le déroulé minute par minute avec vos intervenants si besoin. <b>Jour J</b> : accueil des participants dès leur arrivée, régie technique pendant les plénières, bascule vers les activités de l'après-midi, coordination du traiteur, et un référent Pull Up joignable à chaque instant. Votre seul travail : votre contenu. Le reste est notre métier — c'est exactement ce que nos clients comme Crédit Agricole, SAPMER, CILAM, Antenne Réunion, Canal+ ou Caillé Groupe viennent chercher année après année.</p>
   </div>
 </section>
 
@@ -406,7 +430,11 @@ body{padding-bottom:54px}
 {"@type":"Question","name":"Quels lieux pour un séminaire à La Réunion ?","acceptedAnswer":{"@type":"Answer","text":"Cadres tropicaux à Saint-Gilles, lieux avec vue mer, jardins intimistes, salles équipées et domaines des Hauts : le lieu est choisi selon le groupe, l'image et le budget de l'entreprise."}},
 {"@type":"Question","name":"Peut-on intégrer un team building à un séminaire ?","acceptedAnswer":{"@type":"Answer","text":"Oui, les activités de cohésion s'intègrent au programme via le service dédié Team Building 974 : olympiades, Koh-Lanta à Cap Homard, chasses au trésor."}},
 {"@type":"Question","name":"La technique est-elle comprise dans l'organisation du séminaire ?","acceptedAnswer":{"@type":"Answer","text":"Oui : sonorisation, micros, écrans et habillage lumière aux couleurs de la marque font partie des prestations de Pull Up Événements."}},
-{"@type":"Question","name":"Combien coûte un séminaire d'entreprise à La Réunion ?","acceptedAnswer":{"@type":"Answer","text":"Le budget dépend du nombre de participants, de la durée, du lieu, de la restauration et de l'hébergement. Pull Up Événements envoie une offre sur mesure sous 48 h, sans engagement : 06 93 81 78 82."}}]}
+{"@type":"Question","name":"Combien coûte un séminaire d'entreprise à La Réunion ?","acceptedAnswer":{"@type":"Answer","text":"Le budget dépend du nombre de participants, de la durée, du lieu, de la restauration et de l'hébergement. Pull Up Événements envoie une offre sur mesure sous 48 h, sans engagement : 06 93 81 78 82."}},
+{"@type":"Question","name":"Pour combien de participants organisez-vous des séminaires à La Réunion ?","acceptedAnswer":{"@type":"Answer","text":"Tous les formats : du comité de direction d'une dizaine de personnes à la convention annuelle de plusieurs centaines de participants, en salle, sous chapiteau ou en plein air."}},
+{"@type":"Question","name":"Gérez-vous l'hébergement des participants d'un séminaire ?","acceptedAnswer":{"@type":"Answer","text":"Oui : recherche d'hôtels et solutions adaptées pour les groupes locaux ou venus de métropole, en cohérence avec le lieu du séminaire et le budget."}},
+{"@type":"Question","name":"Que se passe-t-il en cas de pluie pendant un séminaire ?","acceptedAnswer":{"@type":"Answer","text":"Chaque séminaire en extérieur a son plan B : chapiteaux, tentes pagodes ou repli en salle — l'anticipation météo fait partie du métier à La Réunion."}},
+{"@type":"Question","name":"Organisez-vous aussi la soirée de clôture du séminaire ?","acceptedAnswer":{"@type":"Answer","text":"Oui : soirée d'entreprise, dîner de gala, remise de trophées, DJ et animations — la même équipe Pull Up Événements enchaîne sans transition."}}]}
 </script>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"HowTo","name":"Comment organiser un séminaire d'entreprise à La Réunion","description":"La méthode en 4 étapes pour organiser un séminaire d'entreprise réussi à La Réunion.","step":[
@@ -561,6 +589,18 @@ body{padding-bottom:54px}
     });
   }
 })();
+</script>
+<script id="ytf-js">
+document.addEventListener('click',function(e){
+  var b=e.target.closest('.ytf'); if(!b) return;
+  var f=document.createElement('iframe');
+  f.src='https://www.youtube-nocookie.com/embed/'+b.dataset.id+'?autoplay=1';
+  f.title=b.getAttribute('aria-label').replace('Lire la vidéo : ','');
+  f.setAttribute('allow','accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share');
+  f.setAttribute('allowfullscreen','');
+  f.style.cssText='position:absolute;inset:0;width:100%;height:100%;border:0';
+  b.replaceWith(f);
+});
 </script>
 </body>
 </html>
