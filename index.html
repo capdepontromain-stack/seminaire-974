@@ -227,6 +227,22 @@ body{padding-bottom:54px}
 .ytp::after{content:"";width:0;height:0;border-left:19px solid var(--nuit);border-top:12px solid transparent;border-bottom:12px solid transparent;margin-left:5px}
 .ytf:hover .ytp{background:var(--lagon)}.ytf:hover .ytp::after{border-left-color:#fff}
 /* fin couture */
+
+/* ===== ORFÈVRE ===== */
+.marquee{-webkit-mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent);mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent)}
+section p a:not(.btn), article p a:not(.btn), .wrap p a:not(.btn){text-decoration:none;background-image:linear-gradient(#0e7a5f,#0e7a5f);background-size:100% 1.5px;background-repeat:no-repeat;background-position:0 100%;transition:background-size .25s ease}
+section p a:not(.btn):hover, article p a:not(.btn):hover, .wrap p a:not(.btn):hover{background-size:0% 1.5px;background-position:100% 100%}
+a.btn:active,.btn:active{transform:translateY(1px) scale(.98)}
+.stat .n,.boule .n,.ballon .n,.badge49 .n{font-variant-numeric:tabular-nums}
+section ul li::marker, article ul li::marker{color:#0e7a5f}
+summary{transition:background-color .2s ease}
+details:hover summary{background-color:rgba(0,0,0,.03)}
+figure figcaption{transition:color .2s ease}
+@media (prefers-reduced-motion: no-preference){
+.hero .wrap{will-change:opacity,transform}
+}
+
+/* fin orfevre */
 </style>
 <style id="wow-css"></style>
 <style id="polish-css"></style>
@@ -603,6 +619,26 @@ document.addEventListener('click',function(e){
   f.style.cssText='position:absolute;inset:0;width:100%;height:100%;border:0';
   b.replaceWith(f);
 });
+</script>
+
+<script id="orfevre-js">
+(function(){
+  if (matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  var hw = document.querySelector('.hero .wrap');
+  if (!hw) return;
+  var tick = false;
+  addEventListener('scroll', function(){
+    if (tick) return; tick = true;
+    requestAnimationFrame(function(){
+      var y = scrollY;
+      if (y < 800){
+        hw.style.opacity = Math.max(0.25, 1 - y/700);
+        hw.style.transform = 'translateY(' + (y * 0.06) + 'px)';
+      }
+      tick = false;
+    });
+  }, {passive:true});
+})();
 </script>
 </body>
 </html>
