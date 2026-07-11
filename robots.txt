@@ -11,5 +11,5 @@ Allow: /
 User-agent: Google-Extended
 Allow: /
 
-Sitemap: https://capdepontromain-stack.github.io/seminaire-974/sitemap.xml
-# Présentation pour les IA : https://capdepontromain-stack.github.io/seminaire-974/llms.txt
+Sitemap: https://seminaire974.re/sitemap.xml
+# Présentation pour les IA : https://seminaire974.re/llms.txt
