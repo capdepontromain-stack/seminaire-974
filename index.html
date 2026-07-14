@@ -35,7 +35,15 @@ a{color:var(--lagon)}
 .topbar nav{display:flex;gap:20px;align-items:center;flex-wrap:wrap}
 .topbar nav a{color:#c9d4e2;text-decoration:none;font-weight:600;font-size:13.5px;text-transform:uppercase;letter-spacing:1px}
 .topbar nav a.tel{background:var(--fluo);color:var(--nuit);padding:9px 18px;border-radius:4px;letter-spacing:0}
-@media(max-width:720px){.topbar{padding:12px 18px}.topbar nav{gap:10px 14px}.topbar nav a{font-size:11.5px;letter-spacing:.4px}.topbar nav a.tel{display:none}}
+.burger{display:none;background:none;border:0;color:#fff;font-size:26px;line-height:1;cursor:pointer;padding:4px 10px}
+@media(max-width:720px){
+.burger{display:block}
+.topbar{padding:12px 18px}
+.topbar nav{display:none;position:absolute;top:100%;left:0;right:0;background:var(--nuit);flex-direction:column;align-items:stretch;gap:0;padding:6px 18px 14px;box-shadow:0 14px 26px rgba(0,0,0,.35);border-top:1px solid rgba(255,255,255,.08);z-index:20}
+.topbar nav.open{display:flex}
+.topbar nav a{padding:13px 4px;font-size:15px;letter-spacing:.5px;border-bottom:1px solid rgba(255,255,255,.08)}
+.topbar nav a.tel{background:var(--fluo);color:var(--nuit);text-align:center;border-radius:6px;margin-top:10px;border:0;padding:12px}
+}
 /* HERO éditorial */
 .hero{background:var(--nuit);color:#fff;padding:76px 0 84px;position:relative;overflow:hidden}
 .hero::after{content:"974";position:absolute;right:-40px;bottom:-70px;font-family:"Fraunces",serif;font-weight:800;font-size:340px;color:rgba(255,255,255,.04);line-height:1;pointer-events:none}
@@ -250,7 +258,7 @@ figure figcaption{transition:color .2s ease}
 </head>
 <body>
 
-<div class="topbar"><a class="logo" href="./">Séminaire <em>974</em></a><nav><a href="#prestations">Prestations</a><a href="#formats">Formats</a><a href="lieux-seminaire-reunion/">Lieux</a><a href="blog/">Le blog</a><a href="#faq">Questions</a><a class="tel" href="tel:+262693817882">📞 06 93 81 78 82</a></nav></div>
+<div class="topbar"><a class="logo" href="./">Séminaire <em>974</em></a><button class="burger" aria-label="Ouvrir le menu" aria-expanded="false">☰</button><nav><a href="#prestations">Prestations</a><a href="#formats">Formats</a><a href="lieux-seminaire-reunion/">Lieux</a><a href="blog/">Le blog</a><a href="#faq">Questions</a><a class="tel" href="tel:+262693817882">📞 06 93 81 78 82</a></nav></div>
 
 <div class="hero">
   <div class="wrap">
@@ -656,5 +664,6 @@ document.addEventListener('click',function(e){
   }, {passive:true});
 })();
 </script>
+<script>document.querySelectorAll(".burger").forEach(function(b){b.addEventListener("click",function(){var n=b.parentElement.querySelector("nav");var o=n.classList.toggle("open");b.setAttribute("aria-expanded",o);b.textContent=o?"✕":"☰";});});</script>
 </body>
 </html>
