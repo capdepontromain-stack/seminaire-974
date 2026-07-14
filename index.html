@@ -35,6 +35,7 @@ a{color:var(--lagon)}
 .topbar nav{display:flex;gap:20px;align-items:center;flex-wrap:wrap}
 .topbar nav a{color:#c9d4e2;text-decoration:none;font-weight:600;font-size:13.5px;text-transform:uppercase;letter-spacing:1px}
 .topbar nav a.tel{background:var(--fluo);color:var(--nuit);padding:9px 18px;border-radius:4px;letter-spacing:0}
+@media(max-width:720px){.topbar{padding:12px 18px}.topbar nav{gap:10px 14px}.topbar nav a{font-size:11.5px;letter-spacing:.4px}.topbar nav a.tel{display:none}}
 /* HERO éditorial */
 .hero{background:var(--nuit);color:#fff;padding:76px 0 84px;position:relative;overflow:hidden}
 .hero::after{content:"974";position:absolute;right:-40px;bottom:-70px;font-family:"Fraunces",serif;font-weight:800;font-size:340px;color:rgba(255,255,255,.04);line-height:1;pointer-events:none}
