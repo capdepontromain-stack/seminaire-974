@@ -127,6 +127,17 @@ details p{padding:0 22px 20px;font-size:14.5px;color:#3c4654}
 .devis .titre{color:#fff}
 .devis .grand-tel{font-family:"Fraunces",serif;font-weight:800;font-size:clamp(36px,5.6vw,58px);color:var(--fluo);text-decoration:none;display:inline-block;margin:8px 0 4px}
 .devis p{max-width:660px;margin:0 auto 10px;color:#c9d4e2}
+/* Formulaire de devis */
+.pu-form{max-width:560px;margin:26px auto 0;text-align:left}
+.pu-form .duo{display:grid;grid-template-columns:1fr 1fr;gap:0 14px}
+.pu-form label{display:block;font-weight:800;font-size:13.5px;margin:12px 0 5px;color:#fff}
+.pu-form input,.pu-form select,.pu-form textarea{width:100%;padding:12px 14px;border:2px solid rgba(255,255,255,.25);border-radius:8px;background:var(--papier);color:var(--nuit);font-family:"Inter",sans-serif;font-size:15.5px;box-sizing:border-box}
+.pu-form input:focus,.pu-form select:focus,.pu-form textarea:focus{outline:none;border-color:var(--fluo)}
+.pu-form button.btn{width:100%;margin-top:20px;border:0;cursor:pointer;font-size:16.5px;font-family:"Inter",sans-serif;text-align:center}
+.pu-form button.btn[disabled]{opacity:.6;cursor:default}
+.pu-etat{font-weight:800;text-align:center;margin-top:16px;font-size:15px;line-height:1.5;max-width:560px;margin-left:auto;margin-right:auto}
+.pu-mini{font-size:13px;opacity:.85;text-align:center;margin-top:12px}
+@media(max-width:560px){.pu-form .duo{grid-template-columns:1fr}}
 footer{background:#0a1626;color:#8b99ab;text-align:center;padding:40px 20px;font-size:13.5px}
 footer a{color:var(--fluo);text-decoration:none}
 footer .fl{font-family:"Fraunces",serif;font-weight:800;font-size:20px;color:#fff}
@@ -432,7 +443,49 @@ figure figcaption{transition:color .2s ease}
     <p>Chaque séminaire est unique : parlez-nous de votre projet — nombre de participants, dates, budget, objectifs et lieu souhaité — et recevez une offre sur mesure sous 48 h.</p>
     <a class="grand-tel" href="tel:+262693817882">06 93 81 78 82</a>
     <p style="font-size:14px">Romain, fondateur de Pull Up Événements</p>
-    <p style="margin-top:12px"><a class="btn" href="mailto:contact@pullup.re?subject=Devis%20s%C3%A9minaire%20d'entreprise&body=Bonjour,%0A%0ANous%20souhaitons%20organiser%20un%20s%C3%A9minaire%20d'entreprise.%0A%0ANombre%20de%20participants%20:%0ADates%20envisag%C3%A9es%20:%0AObjectifs%20:%0ALieu%20ou%20r%C3%A9gion%20souhait%C3%A9e%20:%0AH%C3%A9bergement%20n%C3%A9cessaire%20:%20oui/non%0ABudget%20approximatif%20:%0A%0AMerci%20!">✉️ Demander un devis par e-mail</a></p>
+    <form class="pu-form" id="form-devis">
+      <label for="nom">Votre nom / société</label>
+      <input id="nom" name="nom" required>
+      <div class="duo">
+        <div>
+          <label for="tel">Téléphone</label>
+          <input id="tel" name="telephone" type="tel" required>
+        </div>
+        <div>
+          <label for="email">E-mail</label>
+          <input id="email" name="email" type="email" autocomplete="email" required placeholder="Pour recevoir le devis">
+        </div>
+      </div>
+      <div class="duo">
+        <div>
+          <label for="participants">Nombre de participants</label>
+          <input id="participants" name="participants" type="number" min="1" inputmode="numeric" placeholder="Ex : 40">
+        </div>
+        <div>
+          <label for="date">Dates envisagées</label>
+          <input id="date" name="date" placeholder="Ex : mars 2027">
+        </div>
+      </div>
+      <div class="duo">
+        <div>
+          <label for="lieu">Lieu ou région</label>
+          <input id="lieu" name="lieu" placeholder="Ex : Ouest, à définir…">
+        </div>
+        <div>
+          <label for="hebergement">Hébergement</label>
+          <select id="hebergement" name="hebergement">
+            <option>À définir</option>
+            <option>Oui, nuitées incluses</option>
+            <option>Non, séminaire à la journée</option>
+          </select>
+        </div>
+      </div>
+      <label for="msg">Vos objectifs en quelques mots</label>
+      <textarea id="msg" name="message" rows="3" placeholder="Plénière, ateliers, cohésion, lancement de produit…"></textarea>
+      <button class="btn" type="submit" id="btn-devis">Demander mon devis séminaire</button>
+      <p class="pu-etat" id="devis-etat" role="status" aria-live="polite"></p>
+      <p class="pu-mini">Réponse sous 48 h. Encore plus rapide : <a style="color:var(--fluo)" href="tel:+262693817882">appelez le 06 93 81 78 82</a>.</p>
+    </form>
   </div>
 </section>
 
@@ -539,6 +592,9 @@ figure figcaption{transition:color .2s ease}
   if (!matchMedia('(prefers-reduced-motion: reduce)').matches){
     document.querySelectorAll('.stat .n, .boule .n, .ballon .n, .badge49 .n').forEach(function(el){
       var t = el.textContent;
+      /* Jamais animer une note sur 5 : si l'animation se fige (onglet en
+         arriere-plan, robot d'indexation), le visiteur lit « 0,2/5 ». */
+      if (t.indexOf('/5') !== -1) return;
       var m = t.match(/^(\d+)([.,]\d+)?/);
       if (!m) return;
       var fin = parseFloat(m[1] + (m[2]||'').replace(',','.'));
@@ -663,5 +719,132 @@ document.addEventListener('click',function(e){
 })();
 </script>
 <script>document.querySelectorAll(".burger").forEach(function(b){b.addEventListener("click",function(){var n=b.parentElement.querySelector("nav");var o=n.classList.toggle("open");b.setAttribute("aria-expanded",o);b.textContent=o?"✕":"☰";});});</script>
+
+<script>
+/* ═══════════════════════════════════════════════════════════════
+   SUIVI — Google Analytics 4 + conversions Google Ads
+   Remplir les 3 valeurs et le suivi démarre tout seul.
+   Tant qu'elles sont vides, rien n'est chargé (aucun cookie posé).
+   GA4       : Analytics > Admin > Flux de données  →  "G-XXXXXXXXXX"
+   ADS       : Google Ads > Objectifs > Conversions > Balise Google
+   ADS_DEVIS : même page, colonne "Étiquette de conversion"
+   ═══════════════════════════════════════════════════════════════ */
+var SUIVI = { GA4: "", ADS: "", ADS_DEVIS: "" };
+
+/* Clé Web3Forms — une seule clé pour tous les sites Pull Up.
+   Réglages et destinataire sur app.web3forms.com */
+var CLE_WEB3FORMS = "b3c46110-bfbb-43f9-82b0-d856c919590d";
+
+var SITE = "seminaire974.re";
+
+(function(){
+  var ids = [SUIVI.GA4, SUIVI.ADS].filter(Boolean);
+  if (!ids.length) return;
+  window.dataLayer = window.dataLayer || [];
+  window.gtag = function(){ dataLayer.push(arguments); };
+  gtag('js', new Date());
+  var s = document.createElement('script');
+  s.async = true;
+  s.src = 'https://www.googletagmanager.com/gtag/js?id=' + ids[0];
+  document.head.appendChild(s);
+  ids.forEach(function(id){ gtag('config', id); });
+})();
+
+function pisterEvenement(nom, params){
+  if (typeof gtag !== 'function') return;
+  gtag('event', nom, params || {});
+}
+
+function pisterConversionDevis(){
+  pisterEvenement('demande_devis', { source: SITE });
+  if (typeof gtag === 'function' && SUIVI.ADS_DEVIS) {
+    gtag('event', 'conversion', { send_to: SUIVI.ADS_DEVIS });
+  }
+}
+
+document.querySelectorAll('a[href^="tel:"]').forEach(function(a){
+  a.addEventListener('click', function(){
+    pisterEvenement('clic_telephone', { source: SITE });
+  });
+});
+
+/* ═══════════════════════════════════════════════════════════════
+   FORMULAIRE DE DEVIS — envoi direct vers la boîte Pull Up.
+   Si le réseau échoue, on bascule sur la messagerie du visiteur
+   pour ne perdre aucune demande.
+   ═══════════════════════════════════════════════════════════════ */
+(function(){
+  var f    = document.getElementById('form-devis');
+  var btn  = document.getElementById('btn-devis');
+  var etat = document.getElementById('devis-etat');
+  if (!f) return;
+
+  function champs(){
+    return {
+      "Nom / société":         f.nom.value,
+      "Téléphone":             f.telephone.value,
+      "E-mail":                f.email.value,
+      "Nombre de participants": f.participants.value || "non précisé",
+      "Dates envisagées":      f.date.value  || "non précisées",
+      "Lieu ou région":        f.lieu.value  || "non précisé",
+      "Hébergement":           f.hebergement.value,
+      "Les objectifs":         f.message.value || "—" 
+    };
+  }
+
+  function secoursMessagerie(){
+    var d = champs(), corps = "Bonjour,\r\n\r\nNous souhaitons organiser un séminaire d'entreprise.\r\n\r\n";
+    for (var k in d) corps += k + " : " + d[k] + "\r\n";
+    corps += "\r\n(Demande envoyée depuis " + SITE + ")";
+    window.location.href = "mailto:contact@pullup.re?subject="
+      + encodeURIComponent("Devis séminaire — " + f.nom.value)
+      + "&body=" + encodeURIComponent(corps);
+  }
+
+  f.addEventListener('submit', function(e){
+    e.preventDefault();
+    btn.disabled = true;
+    var libelle = btn.textContent;
+    btn.textContent = "Envoi en cours…";
+    etat.textContent = "";
+
+    var donnees = champs();
+    donnees._subject = "Devis séminaire — " + f.nom.value;
+    donnees["Reçu depuis"] = SITE;
+
+    function envoyerWeb3(){
+      if (!CLE_WEB3FORMS) return Promise.reject(new Error('clé absente'));
+      var corps = { access_key: CLE_WEB3FORMS, subject: donnees._subject, from_name: 'Séminaire 974' };
+      for (var k in donnees) if (k.charAt(0) !== '_') corps[k] = donnees[k];
+      return fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+        body: JSON.stringify(corps)
+      })
+      .then(function(r){ return r.json(); })
+      .then(function(rep){
+        if (rep && rep.success) return rep;
+        throw new Error(rep && rep.message ? rep.message : 'envoi refusé');
+      });
+    }
+
+    envoyerWeb3()
+    .then(function(){
+      f.reset();
+      btn.textContent = "Demande envoyée ✓";
+      etat.style.color = "#fff";
+      etat.textContent = "Merci ! Votre demande est bien arrivée. Nous revenons vers vous sous 48 h — pour aller plus vite, appelez le 06 93 81 78 82.";
+      pisterConversionDevis();
+    })
+    .catch(function(){
+      btn.disabled = false;
+      btn.textContent = libelle;
+      etat.style.color = "#ffe600";
+      etat.textContent = "L'envoi automatique n'a pas fonctionné — nous ouvrons votre messagerie avec la demande pré-remplie. Ou appelez le 06 93 81 78 82.";
+      secoursMessagerie();
+    });
+  });
+})();
+</script>
 </body>
 </html>
