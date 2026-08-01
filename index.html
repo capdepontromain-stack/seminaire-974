@@ -1065,5 +1065,25 @@ document.querySelectorAll('a[href^="tel:"]').forEach(function(a){
 
 })();
 </script>
+<style id="21st-v4-css">
+@media(min-width:720px) and (prefers-reduced-motion:no-preference){
+.hero .aur21{position:absolute;width:56vw;height:56vw;border-radius:50%;filter:blur(80px);opacity:.2;pointer-events:none;z-index:0;background:radial-gradient(circle,#0e7a5f,transparent 65%);animation:aur21 16s ease-in-out infinite alternate}
+.hero .aur21.b{background:radial-gradient(circle,#ffe600,transparent 65%);animation-duration:21s;animation-direction:alternate-reverse}
+@keyframes aur21{from{transform:translate(-12%,-8%) scale(1)}to{transform:translate(14%,10%) scale(1.25)}}
+}
+</style>
+<script id="21st-v4">
+(function(){
+  /* Aurore dérivante (inspiration « Aurora Background ») */
+  var hero = document.querySelector('.hero');
+  if (hero){
+    var a = document.createElement('div'); a.className = 'aur21';
+    a.style.top = '-12%'; a.style.left = '-8%';
+    var b = document.createElement('div'); b.className = 'aur21 b';
+    b.style.bottom = '-16%'; b.style.right = '-6%';
+    hero.insertBefore(a, hero.firstChild); hero.insertBefore(b, hero.firstChild);
+  }
+})();
+</script>
 </body>
 </html>
