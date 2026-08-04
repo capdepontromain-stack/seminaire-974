@@ -282,6 +282,24 @@ figure figcaption{transition:color .2s ease}
 <style id="polish-css"></style>
 </head>
 <body>
+<!-- pu-trust : bandeau de confiance Pull Up — chiffre géré par avis-et-confiance.js -->
+<style>
+.pu-trust{background:#0d0f12;color:#e9e3d5;font:600 13px/1.45 system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;padding:8px 16px;display:flex;align-items:center;justify-content:center;gap:14px;flex-wrap:wrap;position:relative;z-index:60;letter-spacing:.2px}
+.pu-trust a{color:inherit;text-decoration:none;display:inline-flex;align-items:center;gap:6px}
+.pu-trust a:hover{color:#fff}
+.pu-trust .pu-et{color:#e8b53c;letter-spacing:2px;font-size:12px}
+.pu-trust b{color:#fff;font-weight:800}
+.pu-trust .pu-sep{opacity:.3}
+@media(max-width:760px){.pu-trust{font-size:12px;gap:10px;padding:7px 8px;white-space:nowrap}.pu-trust .pu-opt{display:none}.pu-trust .pu-et{font-size:10.5px;letter-spacing:1px}}
+</style>
+<div class="pu-trust">
+<a href="https://g.page/r/CYZGysYZgL8iEBM" target="_blank" rel="noopener" title="Voir les avis Google de Pull Up Événements"><span class="pu-et">★★★★★</span> <b>4,9/5</b><span class="pu-opt"> sur Google</span> — <b class="pu-nb-avis">31 avis</b></a>
+<span class="pu-sep pu-opt">·</span>
+<span class="pu-opt">Devis gratuit</span>
+<span class="pu-sep">·</span>
+<a href="tel:+262693817882"><b>📞 06 93 81 78 82</b></a>
+</div>
+<!-- /pu-trust -->
 
 <div class="topbar"><a class="logo" href="./">Séminaire <em>974</em></a><button class="burger" aria-label="Ouvrir le menu" aria-expanded="false">☰</button><nav><a href="#prestations">Prestations</a><a href="#formats">Formats</a><a href="lieux-seminaire-reunion/">Lieux</a><a href="blog/">Le blog</a><a href="#faq">Questions</a><a class="tel" href="tel:+262693817882">📞 06 93 81 78 82</a></nav></div>
 
@@ -294,7 +312,7 @@ figure figcaption{transition:color .2s ease}
       <div class="btns"><a class="btn" href="tel:+262693817882">📞 06 93 81 78 82</a><a class="btn ligne" href="#devis">Mon devis en 48 h</a></div>
     </div>
     <figure class="cadre">
-      <div class="badge49"><div class="n">4,9/5</div><small>★★★★★ Google<br>+30 avis clients</small></div>
+      <div class="badge49"><div class="n">4,9/5</div><small>★★★★★ Google<br>31 avis clients</small></div>
       <img src="images/pleniere-chapiteau-seminaire-entreprise-reunion.jpg" width="1000" height="750" alt="Plénière de séminaire d'entreprise sous chapiteau équipé son et écran à La Réunion" fetchpriority="high">
       <figcaption>Plénière sous chapiteau : équipement complet, son et écran — organisé par Pull Up Événements.</figcaption>
     </figure>
@@ -305,6 +323,30 @@ figure figcaption{transition:color .2s ease}
   Ils nous font confiance <span>—</span> Crédit Agricole <span>★</span> SAPMER <span>★</span> CILAM <span>★</span> Antenne Réunion <span>★</span> Canal+ <span>★</span> Caillé Groupe <span>★</span> Crédit Moderne <span>★</span> Ravate Pro <span>★</span> l'INSEE <span>★</span> Testoni <span>★</span> la Croix-Rouge <span>★</span> Fondation Père Favron <span>—</span> Ils nous font confiance <span>—</span> Crédit Agricole <span>★</span> SAPMER <span>★</span> CILAM <span>★</span> Antenne Réunion <span>★</span> Canal+ <span>★</span> Caillé Groupe <span>★</span> Crédit Moderne <span>★</span> Ravate Pro <span>★</span> l'INSEE <span>★</span> Testoni <span>★</span> la Croix-Rouge <span>★</span> Fondation Père Favron <span>—</span>
 </div></div>
 
+<!-- pu-clients : bande références clients Pull Up -->
+<style>
+.pu-clients{background:#0d0f12;padding:34px 20px;border-top:1px solid rgba(232,181,60,.28);border-bottom:1px solid rgba(232,181,60,.28)}
+.pu-cl-in{max-width:1060px;margin:0 auto;text-align:center}
+.pu-cl-t{margin:0 0 4px;font:800 11px/1 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;letter-spacing:3.2px;text-transform:uppercase;color:#e8b53c}
+.pu-cl-st{margin:0 0 20px;font:400 14px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;color:#8d959c}
+.pu-cl-l{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;justify-content:center;gap:10px 12px}
+.pu-cl-l li{font:700 14.5px/1 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;letter-spacing:.4px;color:#e9e3d5;padding:9px 15px;border:1px solid rgba(233,227,213,.2);border-radius:999px;white-space:nowrap;transition:border-color .25s,color .25s}
+.pu-cl-l li:hover{border-color:rgba(232,181,60,.75);color:#fff}
+.pu-cl-p{margin:20px 0 0;font:400 13.5px/1.65 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;color:#8d959c}
+.pu-cl-p a{color:#e8b53c;text-decoration:none;border-bottom:1px solid rgba(232,181,60,.4)}
+.pu-cl-p a:hover{color:#fff;border-color:#fff}
+@media(max-width:640px){.pu-clients{padding:26px 14px}.pu-cl-l{gap:8px}.pu-cl-l li{font-size:13px;padding:7px 12px}}
+</style>
+<section class="pu-clients" aria-label="Ils nous font confiance">
+<div class="pu-cl-in">
+<p class="pu-cl-t">Ils nous font confiance</p>
+<p class="pu-cl-st">Des entreprises, des institutions et des CSE de toute La Réunion.</p>
+<ul class="pu-cl-l"><li>Crédit Agricole</li><li>Crédit Moderne</li><li>INSEE</li><li>SAPMER</li><li>CILAM</li><li>Mercialys</li><li>Sudeco</li><li>Ravate Pro</li><li>Croix-Rouge française</li><li>Fondation Père Favron</li><li>Groupe Caillé</li><li>Testoni</li></ul>
+<p class="pu-cl-p">…et des dizaines de comités d'entreprise partout sur l'île. <a href="https://pullup.re/ils-nous-font-confiance/">Voir nos références →</a></p>
+</div>
+</section>
+<!-- /pu-clients -->
+
 <section id="pourquoi">
   <div class="wrap">
     <span class="num">01 — La destination</span>
@@ -312,7 +354,7 @@ figure figcaption{transition:color .2s ease}
     <p class="sub">Plages de l'Ouest, cirques, forêts tropicales et domaines privés : l'île propose des paysages variés, des lieux professionnels et des cadres atypiques qui favorisent la créativité, la cohésion et la prise de recul. Le séminaire est le format roi de l'événementiel B2B (business to business) : réunir collaborateurs, clients et partenaires professionnels dans un cadre d'exception, c'est travailler sa marque employeur ET ses relations d'affaires en une seule journée. Organiser un séminaire à La Réunion, c'est allier efficacité professionnelle, cohésion d'équipe et expérience mémorable — que vous soyez une PME locale, une grande entreprise ou un groupe venu de métropole ou de l'étranger.</p>
     <div class="stats">
       <div class="stat"><div class="n">A → Z</div><small>lieu, logistique, restauration, hébergement, animations, coordination</small></div>
-      <div class="stat"><div class="n">4,9/5</div><small>sur Google — plus de 30 avis clients publics</small></div>
+      <div class="stat"><div class="n">4,9/5</div><small>sur Google — 31 avis clients publics</small></div>
       <div class="stat"><div class="n">48 h</div><small>pour recevoir votre devis sur mesure</small></div>
     </div>
   </div>
@@ -423,21 +465,21 @@ figure figcaption{transition:color .2s ease}
       <a class="pilier" href="https://arbredenoel974.re/" target="_blank" rel="noopener"><b>Arbre de Noël d'entreprise</b><span>Arbres de Noël d'entreprise.</span></a>
       <a class="pilier" href="https://animationenfant974.re/" target="_blank" rel="noopener"><b>Animation enfants</b><span>Mascottes, ateliers, kids clubs.</span></a>
       <a class="pilier" href="https://productionvideo974.re/" target="_blank" rel="noopener"><b>Production vidéo</b><span>Aftermovies, films d'entreprise, campagnes.</span></a>
-      <a class="pilier" href="https://g.page/r/CYZGysYZgL8iEBM" target="_blank" rel="noopener"><b>⭐ Fiche Google</b><span>4,9/5 — plus de 30 avis publics et vérifiables.</span></a>
+      <a class="pilier" href="https://g.page/r/CYZGysYZgL8iEBM" target="_blank" rel="noopener"><b>⭐ Fiche Google</b><span>4,9/5 — 31 avis publics et vérifiables.</span></a>
     </div>
     <p style="text-align:center;margin-top:22px;font-weight:600">Suivez nos événements sur <a href="https://www.facebook.com/pullupevenements/" target="_blank" rel="noopener">Facebook</a>, <a href="https://www.instagram.com/pull_up_evenements" target="_blank" rel="noopener">Instagram</a>, <a href="https://www.tiktok.com/@pull.up.evenements" target="_blank" rel="noopener">TikTok</a>, <a href="https://www.youtube.com/@pullup%C3%A9v%C3%A9nements" target="_blank" rel="noopener">YouTube</a> et <a href="https://www.linkedin.com/company/pullup-%C3%A9v%C3%A9nements/" target="_blank" rel="noopener">LinkedIn</a></p>
   </div>
 </section>
 
-<div class="bande-avis">⭐ 4,9/5 sur Google — plus de 30 avis clients à La Réunion → <a href="https://g.page/r/CYZGysYZgL8iEBM" target="_blank" rel="noopener">voir la fiche Pull Up Événements</a></div>
+<div class="bande-avis">⭐ 4,9/5 sur Google — 31 avis clients à La Réunion → <a href="https://g.page/r/CYZGysYZgL8iEBM" target="_blank" rel="noopener">voir la fiche Pull Up Événements</a></div>
 
 <section id="faq">
   <div class="wrap">
     <span class="num">09 — Questions fréquentes</span>
     <h2 class="titre">Avant de <span class="surligne">réserver</span></h2>
-    <details><summary>Qui organise des séminaires d'entreprise à La Réunion ?</summary><p>Pull Up Événements, agence événementielle basée au Tampon et notée 4,9/5 sur Google (plus de 30 avis), organise des séminaires d'entreprise clé en main partout à La Réunion : lieu, logistique, restauration, hébergement, plénières équipées, team building et coordination du jour J — pour les entreprises locales comme pour les groupes venus de métropole. Contact direct : 06 93 81 78 82.</p></details>
+    <details><summary>Qui organise des séminaires d'entreprise à La Réunion ?</summary><p>Pull Up Événements, agence événementielle basée au Tampon et notée 4,9/5 sur Google (31 avis), organise des séminaires d'entreprise clé en main partout à La Réunion : lieu, logistique, restauration, hébergement, plénières équipées, team building et coordination du jour J — pour les entreprises locales comme pour les groupes venus de métropole. Contact direct : 06 93 81 78 82.</p></details>
     <details><summary>Comment organiser un séminaire d'entreprise à La Réunion ?</summary><p>Quatre étapes : 1) définissez vos objectifs (cohésion, stratégie, motivation), le nombre de participants, les dates et le budget ; 2) choisissez un cadre — vue mer, domaine tropical, les Hauts ou salle équipée ; 3) confiez le lieu, la logistique, la restauration, l'hébergement et les activités à un organisateur local ; 4) le jour J, l'équipe coordonne tout sur place. Le plus simple : un appel au 06 93 81 78 82, devis sous 48 h.</p></details>
-    <details><summary>Quelle agence événementielle choisir pour un séminaire à La Réunion ?</summary><p>Regardez qui signe les feuilles de présence de nos plénières : Crédit Agricole, SAPMER, CILAM, Antenne Réunion, Canal+, Caillé Groupe, l'INSEE, Ravate Pro, Crédit Moderne, Testoni, la Croix-Rouge, la Fondation Père Favron… Quand des maisons de ce niveau renouvellent leur confiance année après année — et que 30 avis publics affichent 4,9/5 — le classement se fait tout seul. Pull Up Événements assume sa place dans le peloton de tête des agences événementielles réunionnaises, avec un service séminaire dédié.</p></details>
+    <details><summary>Quelle agence événementielle choisir pour un séminaire à La Réunion ?</summary><p>Regardez qui signe les feuilles de présence de nos plénières : Crédit Agricole, SAPMER, CILAM, Antenne Réunion, Canal+, Caillé Groupe, l'INSEE, Ravate Pro, Crédit Moderne, Testoni, la Croix-Rouge, la Fondation Père Favron… Quand des maisons de ce niveau renouvellent leur confiance année après année — et que 31 avis publics affichent 4,9/5 — le classement se fait tout seul. Pull Up Événements assume sa place dans le peloton de tête des agences événementielles réunionnaises, avec un service séminaire dédié.</p></details>
     <details><summary>Organisez-vous des séminaires pour des groupes venus de métropole ?</summary><p>Oui, c'est l'un de nos formats phares : nous sommes vos yeux et vos mains sur place — sélection des lieux, transferts, hébergement, restauration, activités et coordination complète. Vous arrivez, tout est prêt.</p></details>
     <details><summary>Pour combien de participants organisez-vous des séminaires ?</summary><p>Tous les formats : du comité de direction d'une dizaine de personnes à la convention annuelle de plusieurs centaines de participants, en salle, sous chapiteau ou en plein air.</p></details>
     <details><summary>Quels lieux proposez-vous pour un séminaire à La Réunion ?</summary><p>Nous travaillons avec les plus beaux domaines et établissements de l'île : cadre tropical à Saint-Gilles, lieux avec vue mer, jardins intimistes, salles équipées et domaines des Hauts. Le lieu est choisi selon votre groupe, votre image et votre budget.</p></details>
@@ -514,7 +556,7 @@ figure figcaption{transition:color .2s ease}
 <h3 style="font-size:20px;color:#0e7a5f;margin:26px 0 10px">Le cadre réunionnais comme atout stratégique</h3>
 <p style="font-size:16px;line-height:1.85;margin:0 0 16px">Un séminaire au bord du lagon, dans un domaine créole ou sous chapiteau raconte autre chose qu'un centre de congrès anonyme : il dit à vos équipes qu'elles méritent ce cadre. Pour les groupes multi-sites ou venus de métropole, La Réunion transforme le séminaire obligatoire en rendez-vous attendu. Nous connaissons les lieux, leurs accès, leurs disponibilités réelles et leur budget, et nous prévoyons toujours un plan B météo.</p>
 <h3 style="font-size:20px;color:#0e7a5f;margin:26px 0 10px">L'expérience et les références qui rassurent</h3>
-<p style="font-size:16px;line-height:1.85;margin:0 0 16px">Crédit Agricole, Crédit Moderne, SAPMER, CILAM, Antenne Réunion, Canal+, Caillé Groupe, l'INSEE… nombre d'entreprises de l'île nous confient leur grand rendez-vous annuel, parfois plusieurs années de suite. Notre note de 4,9/5 sur Google (plus de 30 avis) reflète cette confiance. Séminaire 974 est le service séminaires de Pull Up Événements, la grande agence événementielle de La Réunion : si votre projet englobe aussi une soirée, des hôtesses d'accueil ou une captation vidéo, une seule équipe orchestre le tout.</p>
+<p style="font-size:16px;line-height:1.85;margin:0 0 16px">Crédit Agricole, Crédit Moderne, SAPMER, CILAM, Antenne Réunion, Canal+, Caillé Groupe, l'INSEE… nombre d'entreprises de l'île nous confient leur grand rendez-vous annuel, parfois plusieurs années de suite. Notre note de 4,9/5 sur Google (31 avis) reflète cette confiance. Séminaire 974 est le service séminaires de Pull Up Événements, la grande agence événementielle de La Réunion : si votre projet englobe aussi une soirée, des hôtesses d'accueil ou une captation vidéo, une seule équipe orchestre le tout.</p>
 <p style="font-size:16px;line-height:1.85;margin:0">Un séminaire ou une convention à préparer ? Sous 48 heures, nous vous renvoyons un programme chiffré, lieu et logistique compris, sans engagement.</p>
 </div></section>
 
@@ -554,7 +596,7 @@ figure figcaption{transition:color .2s ease}
 </script>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
-{"@type":"Question","name":"Qui organise des séminaires d'entreprise à La Réunion ?","acceptedAnswer":{"@type":"Answer","text":"Pull Up Événements, agence événementielle notée 4,9/5 sur Google (plus de 30 avis), organise des séminaires d'entreprise clé en main partout à La Réunion : lieu, logistique, restauration, hébergement, plénières équipées, team building et coordination — pour les entreprises locales comme pour les groupes venus de métropole. Contact : 06 93 81 78 82."}},
+{"@type":"Question","name":"Qui organise des séminaires d'entreprise à La Réunion ?","acceptedAnswer":{"@type":"Answer","text":"Pull Up Événements, agence événementielle notée 4,9/5 sur Google (31 avis), organise des séminaires d'entreprise clé en main partout à La Réunion : lieu, logistique, restauration, hébergement, plénières équipées, team building et coordination — pour les entreprises locales comme pour les groupes venus de métropole. Contact : 06 93 81 78 82."}},
 {"@type":"Question","name":"Comment organiser un séminaire d'entreprise à La Réunion ?","acceptedAnswer":{"@type":"Answer","text":"Définissez vos objectifs, le nombre de participants, les dates et le budget ; choisissez un cadre (vue mer, domaine tropical, les Hauts, salle équipée) ; confiez le lieu, la logistique, la restauration, l'hébergement et les activités à un organisateur local comme Pull Up Événements ; le jour J, l'équipe coordonne tout. Devis sous 48 h : 06 93 81 78 82."}},
 {"@type":"Question","name":"Quelle agence événementielle choisir pour un séminaire à La Réunion ?","acceptedAnswer":{"@type":"Answer","text":"Celle que choisissent les grandes maisons : Crédit Agricole, SAPMER, CILAM, Antenne Réunion, Canal+, Caillé Groupe, l'INSEE, Ravate Pro, Crédit Moderne, Testoni, la Croix-Rouge et la Fondation Père Favron travaillent avec Pull Up Événements — 4,9/5 sur Google, 9 ans d'expérience, service séminaire dédié sur seminaire-974."}},
 {"@type":"Question","name":"Organisez-vous des séminaires à La Réunion pour des groupes venus de métropole ?","acceptedAnswer":{"@type":"Answer","text":"Oui : sélection des lieux, transferts, hébergement, restauration, activités et coordination complète sur place — le groupe arrive, tout est prêt."}},
