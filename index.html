@@ -571,8 +571,19 @@ figure figcaption{transition:color .2s ease}
     <a class="grand-tel" href="tel:+262693817882">06 93 81 78 82</a>
     <p style="font-size:14px">Romain, fondateur de Pull Up Événements</p>
     <form class="pu-form" id="form-devis">
+      <input type="checkbox" name="botcheck" tabindex="-1" autocomplete="off" style="display:none" aria-hidden="true">
+      <input type="hidden" name="source_page" value="">
+      <input type="hidden" name="site" value="seminaire974.re">
       <label for="nom">Votre nom / société</label>
       <input id="nom" name="nom" required>
+      <label for="type">Prestation</label>
+      <select id="type" name="type">
+        <option>Séminaire à la journée</option>
+        <option>Séminaire résidentiel</option>
+        <option>Séminaire + team building</option>
+        <option>Journée d'étude / convention</option>
+        <option>Autre / à définir</option>
+      </select>
       <div class="duo">
         <div>
           <label for="tel">Téléphone</label>
@@ -589,7 +600,7 @@ figure figcaption{transition:color .2s ease}
           <input id="participants" name="participants" type="number" min="1" inputmode="numeric" placeholder="Ex : 40">
         </div>
         <div>
-          <label for="date">Dates envisagées</label>
+          <label for="date">Date de l'événement</label>
           <input id="date" name="date" placeholder="Ex : mars 2027">
         </div>
       </div>
@@ -607,6 +618,8 @@ figure figcaption{transition:color .2s ease}
           </select>
         </div>
       </div>
+      <label for="budget">Budget indicatif</label>
+      <input id="budget" name="budget" placeholder="Votre enveloppe approximative (facultatif)">
       <label for="msg">Vos objectifs en quelques mots</label>
       <textarea id="msg" name="message" rows="3" placeholder="Plénière, ateliers, cohésion, lancement de produit…"></textarea>
       <button class="btn" type="submit" id="btn-devis">Demander mon devis séminaire</button>
@@ -772,9 +785,9 @@ var CLE_WEB3FORMS = "b3c46110-bfbb-43f9-82b0-d856c919590d"; var SITE = "seminair
 
 (function(){ var ids = [SUIVI.GA4, SUIVI.ADS].filter(Boolean); if (!ids.length) return; window.dataLayer = window.dataLayer || []; window.gtag = function(){ dataLayer.push(arguments); }; gtag('js', new Date()); var s = document.createElement('script'); s.async = true; s.src = 'https://www.googletagmanager.com/gtag/js?id=' + ids[0]; document.head.appendChild(s); ids.forEach(function(id){ gtag('config', id); });
 })(); function pisterEvenement(nom, params){ if (typeof gtag !== 'function') return; gtag('event', nom, params || {});
-} function pisterConversionDevis(){ pisterEvenement('demande_devis', { source: SITE }); if (typeof gtag === 'function' && SUIVI.ADS_DEVIS) { gtag('event', 'conversion', { send_to: SUIVI.ADS_DEVIS });
+} function pisterConversionDevis(){ if (!window.__puDevisEnvoye) { window.__puDevisEnvoye = true; pisterEvenement('devis_envoye', { site: SITE, prestation: (function(){ try { var el = document.querySelector('#form-devis [name=\"type\"]'); return el ? el.value : ''; } catch (err) { return ''; } })(), source_page: location.pathname }); } if (typeof gtag === 'function' && SUIVI.ADS_DEVIS) { gtag('event', 'conversion', { send_to: SUIVI.ADS_DEVIS });
   }
-} document.querySelectorAll('a[href^="tel:"]').forEach(function(a){ a.addEventListener('click', function(){ pisterEvenement('clic_telephone', { source: SITE });
+} document.querySelectorAll('a[href^="tel:"]').forEach(function(a){ a.addEventListener('click', function(ev){ if (ev && ev.__puAppel) return; if (ev) ev.__puAppel = true; pisterEvenement('appel_clic', { site: SITE, page: location.pathname });
   });
 });
 
@@ -782,20 +795,22 @@ var CLE_WEB3FORMS = "b3c46110-bfbb-43f9-82b0-d856c919590d"; var SITE = "seminair
    FORMULAIRE DE DEVIS — envoi direct vers la boîte Pull Up.
    Si le réseau échoue, on bascule sur la messagerie du visiteur pour ne perdre aucune demande.
    ═══════════════════════════════════════════════════════════════ */
-(function(){ var f    = document.getElementById('form-devis'); var btn  = document.getElementById('btn-devis'); var etat = document.getElementById('devis-etat'); if (!f) return; function champs(){ return {
+(function(){ var f    = document.getElementById('form-devis'); var btn  = document.getElementById('btn-devis'); var etat = document.getElementById('devis-etat'); if (!f) return; try { if (f.source_page) f.source_page.value = location.pathname; } catch (err) {} function champs(){ return {
       "Nom / société": f.nom.value,
       "Téléphone": f.telephone.value,
       "E-mail": f.email.value,
+      "Prestation": f.type.value,
       "Nombre de participants": f.participants.value || "non précisé",
       "Dates envisagées": f.date.value  || "non précisées",
       "Lieu ou région": f.lieu.value  || "non précisé",
       "Hébergement": f.hebergement.value,
+      "Budget indicatif": f.budget.value || "non précisé",
       "Les objectifs": f.message.value || "—" 
     };
   } function secoursMessagerie(){ var d = champs(), corps = "Bonjour,\r\n\r\nNous souhaitons organiser un séminaire d'entreprise.\r\n\r\n"; for (var k in d) corps += k + " : " + d[k] + "\r\n"; corps += "\r\n(Demande envoyée depuis " + SITE + ")"; window.location.href = "mailto:contact@pullup.re?subject="
       + encodeURIComponent("Devis séminaire — " + f.nom.value)
       + "&body=" + encodeURIComponent(corps);
-  } f.addEventListener('submit', function(e){ e.preventDefault(); btn.disabled = true; var libelle = btn.textContent; btn.textContent = "Envoi en cours…"; etat.textContent = ""; var donnees = champs(); donnees._subject = "Devis séminaire — " + f.nom.value; donnees["Reçu depuis"] = SITE; function envoyerWeb3(){ if (!CLE_WEB3FORMS) return Promise.reject(new Error('clé absente')); var corps = { access_key: CLE_WEB3FORMS, subject: donnees._subject, from_name: 'Séminaire 974' }; for (var k in donnees) if (k.charAt(0) !== '_') corps[k] = donnees[k]; return fetch('https://api.web3forms.com/submit', { method: 'POST', headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' }, body: JSON.stringify(corps)
+  } f.addEventListener('submit', function(e){ e.preventDefault(); if (f.botcheck && f.botcheck.checked) { f.reset(); return; } btn.disabled = true; var libelle = btn.textContent; btn.textContent = "Envoi en cours…"; etat.textContent = ""; var donnees = champs(); donnees._subject = "Devis séminaire — " + f.nom.value; donnees["Reçu depuis"] = SITE; donnees.source_page = (f.source_page && f.source_page.value) || location.pathname; donnees.site = "seminaire974.re"; donnees.botcheck = false; function envoyerWeb3(){ if (!CLE_WEB3FORMS) return Promise.reject(new Error('clé absente')); var corps = { access_key: CLE_WEB3FORMS, subject: donnees._subject, from_name: 'Séminaire 974' }; for (var k in donnees) if (k.charAt(0) !== '_') corps[k] = donnees[k]; return fetch('https://api.web3forms.com/submit', { method: 'POST', headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' }, body: JSON.stringify(corps)
       })
       .then(function(r){ return r.json(); })
       .then(function(rep){ if (rep && rep.success) return rep; throw new Error(rep && rep.message ? rep.message : 'envoi refusé');
@@ -809,9 +824,9 @@ var CLE_WEB3FORMS = "b3c46110-bfbb-43f9-82b0-d856c919590d"; var SITE = "seminair
       });
     } envoyerRelais()
     .catch(function(){ return envoyerWeb3(); })
-    .then(function(){ f.reset(); btn.textContent = "Demande envoyée ✓"; etat.style.color = "#fff"; etat.textContent = "Merci ! Votre demande est bien arrivée. Nous revenons vers vous sous 24 h — pour aller plus vite, appelez le 06 93 81 78 82."; pisterConversionDevis(); if (window.puConfettis) window.puConfettis(btn);
+    .then(function(){ f.reset(); btn.textContent = "Demande envoyée ✓"; etat.style.color = "#fff"; etat.textContent = "Merci ! Votre demande est bien arrivée. Nous revenons vers vous sous 24 h. Pour aller plus vite, appelez le 06 93 81 78 82."; pisterConversionDevis(); if (window.puConfettis) window.puConfettis(btn);
     })
-    .catch(function(){ btn.disabled = false; btn.textContent = libelle; etat.style.color = "#ffe600"; etat.textContent = "L'envoi automatique n'a pas fonctionné — nous ouvrons votre messagerie avec la demande pré-remplie. Ou appelez le 06 93 81 78 82."; secoursMessagerie();
+    .catch(function(){ btn.disabled = false; btn.textContent = libelle; etat.style.color = "#ffe600"; etat.textContent = "L'envoi automatique n'a pas fonctionné : nous ouvrons votre messagerie avec la demande pré-remplie. Ou appelez le 06 93 81 78 82."; secoursMessagerie();
     });
   });
 })();
