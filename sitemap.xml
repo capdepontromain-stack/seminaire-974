@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
 <url><loc>https://seminaire974.re/blog/seminaire-hauts-plaines-cilaos-salazie-reunion/</loc><lastmod>2026-08-26</lastmod><priority>0.7</priority></url>
 <url><loc>https://seminaire974.re/blog/seminaire-face-a-la-mer-reunion/</loc><lastmod>2026-08-22</lastmod><priority>0.7</priority></url>
 <url><loc>https://seminaire974.re/blog/preparer-budget-seminaire-annee-suivante-reunion/</loc><lastmod>2026-08-21</lastmod><priority>0.7</priority></url>
@@ -27,7 +27,7 @@
 <url><loc>https://seminaire974.re/blog/collectivite-choisir-prestataire-evenementiel-reunion/</loc><lastmod>2026-07-25</lastmod></url>
 <url><loc>https://seminaire974.re/blog/organiser-ceremonie-voeux-maire-reunion/</loc><lastmod>2026-07-23</lastmod></url>
 <url><loc>https://seminaire974.re/blog/evenement-institutionnel-mairie-collectivite-reunion/</loc><lastmod>2026-07-23</lastmod></url>
-<url><loc>https://seminaire974.re/blog/quel-team-building-pour-seminaire-reunion/</loc><lastmod>2026-07-23</lastmod></url>
+<url><loc>https://seminaire974.re/blog/quel-team-building-pour-seminaire-reunion/</loc><xhtml:link rel="alternate" hreflang="fr" href="https://seminaire974.re/blog/quel-team-building-pour-seminaire-reunion/"/><xhtml:link rel="alternate" hreflang="en" href="https://seminaire974.re/en/team-building-reunion-island/"/><xhtml:link rel="alternate" hreflang="x-default" href="https://seminaire974.re/en/team-building-reunion-island/"/><lastmod>2026-07-23</lastmod></url>
 <url><loc>https://seminaire974.re/blog/quelle-periode-organiser-seminaire-reunion/</loc><lastmod>2026-07-21</lastmod></url>
 <url><loc>https://seminaire974.re/blog/seminaire-ouest-saint-gilles-reunion/</loc><lastmod>2026-07-20</lastmod></url>
 <url><loc>https://seminaire974.re/blog/seminaire-rentree-kick-off-commercial-reunion/</loc><lastmod>2026-07-14</lastmod></url>
@@ -68,9 +68,9 @@
 <url><loc>https://seminaire974.re/blog/organiser-assemblee-generale-annuelle-entreprise-reunion/</loc><lastmod>2026-08-19</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
 <url><loc>https://seminaire974.re/blog/objectifs-attentes-participants-avant-seminaire-reunion/</loc><lastmod>2026-08-20</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
 <url><loc>https://seminaire974.re/budget-seminaire-reunion/</loc><lastmod>2026-08-21</lastmod><priority>0.9</priority></url>
-<url><loc>https://seminaire974.re/seminaire-reunion-entreprise-metropole/</loc><lastmod>2026-09-06</lastmod><priority>0.9</priority></url>
-<url><loc>https://seminaire974.re/dmc-receptif-la-reunion/</loc><lastmod>2026-09-06</lastmod><priority>0.9</priority></url>
-<url><loc>https://seminaire974.re/seminaire-reunion-ile-maurice/</loc><lastmod>2026-09-06</lastmod><priority>0.9</priority></url>
+<url><loc>https://seminaire974.re/seminaire-reunion-entreprise-metropole/</loc><xhtml:link rel="alternate" hreflang="fr" href="https://seminaire974.re/seminaire-reunion-entreprise-metropole/"/><xhtml:link rel="alternate" hreflang="en" href="https://seminaire974.re/en/reunion-island-incentive-seminar/"/><xhtml:link rel="alternate" hreflang="x-default" href="https://seminaire974.re/en/reunion-island-incentive-seminar/"/><lastmod>2026-09-06</lastmod><priority>0.9</priority></url>
+<url><loc>https://seminaire974.re/dmc-receptif-la-reunion/</loc><xhtml:link rel="alternate" hreflang="fr" href="https://seminaire974.re/dmc-receptif-la-reunion/"/><xhtml:link rel="alternate" hreflang="en" href="https://seminaire974.re/en/dmc-services-reunion-island/"/><xhtml:link rel="alternate" hreflang="x-default" href="https://seminaire974.re/en/dmc-services-reunion-island/"/><lastmod>2026-09-06</lastmod><priority>0.9</priority></url>
+<url><loc>https://seminaire974.re/seminaire-reunion-ile-maurice/</loc><xhtml:link rel="alternate" hreflang="fr" href="https://seminaire974.re/seminaire-reunion-ile-maurice/"/><xhtml:link rel="alternate" hreflang="en" href="https://seminaire974.re/en/reunion-mauritius-combo/"/><xhtml:link rel="alternate" hreflang="x-default" href="https://seminaire974.re/en/reunion-mauritius-combo/"/><lastmod>2026-09-06</lastmod><priority>0.9</priority></url>
 <url><loc>https://seminaire974.re/blog/seminaire-accessible-tous-participants-pmr-reunion/</loc><lastmod>2026-08-22</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
 <url><loc>https://seminaire974.re/blog/seminaire-nord-saint-denis-reunion/</loc><lastmod>2026-08-23</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
 <url><loc>https://seminaire974.re/blog/kit-participant-badges-carnet-seminaire-reunion/</loc><lastmod>2026-08-24</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
@@ -79,4 +79,8 @@
 <url><loc>https://seminaire974.re/seminaire-saint-paul/</loc><lastmod>2026-09-05</lastmod><priority>0.8</priority></url>
 <url><loc>https://seminaire974.re/seminaire-saint-pierre/</loc><lastmod>2026-09-05</lastmod><priority>0.8</priority></url>
 <url><loc>https://seminaire974.re/blog/hebergement-chambres-seminaire-residentiel-reunion/</loc><lastmod>2026-09-05</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+<url><loc>https://seminaire974.re/en/reunion-island-incentive-seminar/</loc><xhtml:link rel="alternate" hreflang="fr" href="https://seminaire974.re/seminaire-reunion-entreprise-metropole/"/><xhtml:link rel="alternate" hreflang="en" href="https://seminaire974.re/en/reunion-island-incentive-seminar/"/><xhtml:link rel="alternate" hreflang="x-default" href="https://seminaire974.re/en/reunion-island-incentive-seminar/"/><lastmod>2026-09-06</lastmod><priority>0.9</priority></url>
+<url><loc>https://seminaire974.re/en/dmc-services-reunion-island/</loc><xhtml:link rel="alternate" hreflang="fr" href="https://seminaire974.re/dmc-receptif-la-reunion/"/><xhtml:link rel="alternate" hreflang="en" href="https://seminaire974.re/en/dmc-services-reunion-island/"/><xhtml:link rel="alternate" hreflang="x-default" href="https://seminaire974.re/en/dmc-services-reunion-island/"/><lastmod>2026-09-06</lastmod><priority>0.9</priority></url>
+<url><loc>https://seminaire974.re/en/reunion-mauritius-combo/</loc><xhtml:link rel="alternate" hreflang="fr" href="https://seminaire974.re/seminaire-reunion-ile-maurice/"/><xhtml:link rel="alternate" hreflang="en" href="https://seminaire974.re/en/reunion-mauritius-combo/"/><xhtml:link rel="alternate" hreflang="x-default" href="https://seminaire974.re/en/reunion-mauritius-combo/"/><lastmod>2026-09-06</lastmod><priority>0.9</priority></url>
+<url><loc>https://seminaire974.re/en/team-building-reunion-island/</loc><xhtml:link rel="alternate" hreflang="fr" href="https://seminaire974.re/blog/quel-team-building-pour-seminaire-reunion/"/><xhtml:link rel="alternate" hreflang="en" href="https://seminaire974.re/en/team-building-reunion-island/"/><xhtml:link rel="alternate" hreflang="x-default" href="https://seminaire974.re/en/team-building-reunion-island/"/><lastmod>2026-09-06</lastmod><priority>0.9</priority></url>
 </urlset>
