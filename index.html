@@ -647,6 +647,19 @@ figure figcaption{transition:color .2s ease}
       <input id="budget" name="budget" placeholder="Votre enveloppe approximative (facultatif)">
       <label for="msg">Vos objectifs en quelques mots</label>
       <textarea id="msg" name="message" rows="3" placeholder="Plénière, ateliers, cohésion, lancement de produit…"></textarea>
+      <label for="connu-par">Comment nous avez-vous connus ?</label>
+      <select id="connu-par" name="Comment nous avez-vous connus" required>
+        <option value="">Choisir dans la liste</option>
+        <option>Google</option>
+        <option>IA (ChatGPT, Perplexity, autre assistant)</option>
+        <option>Facebook / Instagram</option>
+        <option>LinkedIn</option>
+        <option>Bouche-à-oreille</option>
+        <option>Déjà client</option>
+        <option>Annuaire</option>
+        <option>Presse</option>
+        <option>Autre</option>
+      </select>
       <button class="btn" type="submit" id="btn-devis">Demander mon devis séminaire</button>
       <label for="pu-consent" style="display:flex;gap:9px;align-items:flex-start;margin:16px 0 0;font-weight:400;font-size:13.5px;line-height:1.45;cursor:pointer;text-transform:none;letter-spacing:0">
         <input type="checkbox" id="pu-consent" name="consentement" value="oui" required style="width:auto;flex:none;margin:2px 0 0">
