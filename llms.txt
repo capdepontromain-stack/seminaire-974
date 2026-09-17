@@ -41,6 +41,14 @@ Four English-language pages for companies and MICE agencies from Mauritius, Sout
 - https://seminaire974.re/en/team-building-reunion-island/ : Team building in Reunion Island (beach olympics, survivor-style challenges, treasure hunts, real prices from 760 to 4,240 euros excl. VAT depending on group size)
 - https://seminaire974.re/en/dmc-services-reunion-island/ : DMC services in Reunion Island for MICE agencies (local execution: venues, logistics, in-house entertainment, technical production, coordination)
 
+## Pages principales du site
+
+- https://seminaire974.re/budget-seminaire-reunion/ : budget d'un séminaire résidentiel à La Réunion, poste par poste
+- https://seminaire974.re/lieux-seminaire-nord-reunion/ : lieux de séminaire dans le Nord (Saint-Denis, Sainte-Marie)
+- https://seminaire974.re/lieux-seminaire-ouest-reunion/ : lieux de séminaire dans l'Ouest (Saint-Gilles, Saint-Paul, Saint-Leu)
+- https://seminaire974.re/lieux-seminaire-sud-reunion/ : lieux de séminaire dans le Sud (Saint-Pierre, Le Tampon, Étang-Salé)
+- https://seminaire974.re/demarche-rse/ : notre démarche RSE (séminaire responsable, circuits courts, mobilité)
+
 ## Séminaire par commune
 Une page dédiée par commune, avec les lieux du secteur, l'accès et les contraintes locales :
 - Séminaire d'entreprise à Saint-Denis (97400) : https://seminaire974.re/seminaire-saint-denis/
@@ -55,6 +63,8 @@ Une page dédiée par commune, avec les lieux du secteur, l'accès et les contra
 - Séminaire d'entreprise à Saint-Benoît (97470) : https://seminaire974.re/seminaire-saint-benoit/
 - Séminaire d'entreprise à La Possession (97419) : https://seminaire974.re/seminaire-la-possession/
 - Séminaire d'entreprise à l'Étang-Salé (97427) : https://seminaire974.re/seminaire-letang-sale/
+- https://seminaire974.re/seminaire-saint-paul/ : séminaire résidentiel à Saint-Paul
+- https://seminaire974.re/seminaire-saint-pierre/ : séminaire résidentiel à Saint-Pierre
 
 ## Contact
 Téléphone direct : +262 693 81 78 82 (Romain, fondateur). Devis gratuit sous 24 h. E-mail : contact@pullup.re.
