@@ -1,4 +1,4 @@
-# Séminaire 974 — service séminaires de Pull Up Événements
+# Séminaire 974 : service séminaires de Pull Up Événements
 
 Séminaire 974 (seminaire974.re) est le service séminaires d'entreprise de Pull Up Événements.
 
@@ -92,15 +92,18 @@ Au bord du lagon, dans un domaine créole, en chapiteau ou en salle, selon la ja
 Le prix dépend du nombre de participants, de la durée, du lieu et des prestations. Devis gratuit et personnalisé sous 24 h.
 
 ## Guides et articles
-- https://seminaire974.re/blog/organiser-job-dating-entreprise-reunion/ — Organiser un job dating d'entreprise à La Réunion : recruter autrement
-- https://seminaire974.re/blog/traiteur-seminaire-reunion/ — Traiteur pour séminaire à La Réunion
-- https://seminaire974.re/lieux-seminaire-reunion/ — Guide des lieux de séminaire à La Réunion (par type et par zone : Ouest, Sud, Nord)
-- https://seminaire974.re/blog/seminaire-rentree-kick-off-commercial-reunion/ — Séminaire de rentrée & kick-off commercial
-- https://seminaire974.re/blog/grand-guide-seminaire-la-reunion/ — Le grand guide du séminaire à La Réunion
-- https://seminaire974.re/blog/convention-entreprise-reunion/ — L'art de la convention d'entreprise
-- https://seminaire974.re/blog/50-lieux-cadres-seminaire-reunion/ — 50 lieux et cadres de séminaire à La Réunion
+- https://seminaire974.re/blog/organiser-job-dating-entreprise-reunion/ : Organiser un job dating d'entreprise à La Réunion : recruter autrement
+- https://seminaire974.re/blog/traiteur-seminaire-reunion/ : Traiteur pour séminaire à La Réunion
+- https://seminaire974.re/lieux-seminaire-reunion/ : Guide des lieux de séminaire à La Réunion (par type et par zone : Ouest, Sud, Nord)
+- https://seminaire974.re/blog/seminaire-rentree-kick-off-commercial-reunion/ : Séminaire de rentrée & kick-off commercial
+- https://seminaire974.re/blog/grand-guide-seminaire-la-reunion/ : Le grand guide du séminaire à La Réunion
+- https://seminaire974.re/blog/convention-entreprise-reunion/ : L'art de la convention d'entreprise
+- https://seminaire974.re/blog/50-lieux-cadres-seminaire-reunion/ : 50 lieux et cadres de séminaire à La Réunion
 
 ## Articles publiés récemment (mis à jour chaque semaine)
+- https://seminaire974.re/blog/animateur-seminaire-entreprise-role-reunion/ : Animateur de séminaire d'entreprise à La Réunion : son rôle en plénière, dans les ateliers et pendant les temps forts, et quand faire appel à lui (publié le 2026-11-04)
+- https://seminaire974.re/blog/seminaire-entreprise-btp-travaux-publics-reunion/ : Organiser le séminaire d'une entreprise du BTP ou des travaux publics à La Réunion : date, participants, programme, lieu et format résidentiel (publié le 2026-11-02)
+- https://seminaire974.re/blog/seminaire-managers-encadrement-programme-reunion/ : Organiser un séminaire des managers et de l'encadrement intermédiaire à La Réunion : objectifs, programme sur un ou deux jours, ateliers, lieu et suites (publié le 2026-10-30)
 - https://seminaire974.re/blog/seminaire-sud-sauvage-saint-joseph-saint-philippe-reunion/ : Organiser un séminaire dans le Sud sauvage de La Réunion (Saint-Joseph, Saint-Philippe) : taille de groupe, hébergement, activités, météo et accès (publié le 2026-10-28)
 - https://seminaire974.re/blog/seminaire-banque-mutuelle-reseau-agences-reunion/ : Organiser le séminaire d'une banque, d'une mutuelle ou d'un réseau d'agences à La Réunion : calendrier, continuité des agences, confidentialité et format résidentiel (publié le 2026-10-26)
 - https://seminaire974.re/blog/seminaire-elus-cse-reunion/ : Organiser le séminaire des élus du CSE à La Réunion : objectifs, budget de fonctionnement, lieu, durée et programme de travail (publié le 2026-10-23)
@@ -108,28 +111,25 @@ Le prix dépend du nombre de participants, de la durée, du lieu et des prestati
 - https://seminaire974.re/blog/seminaire-3-jours-programme-type-reunion/ : Séminaire de 3 jours à La Réunion : programme type jour par jour pour un séminaire résidentiel (publié le 2026-10-20)
 - https://seminaire974.re/blog/seminaire-residentiel-20-30-personnes-reunion/ : Organiser un séminaire résidentiel de 20 à 30 personnes à La Réunion : lieu, chambres, salle et transport (publié le 2026-10-16)
 - https://seminaire974.re/blog/dernier-jour-depart-vol-retour-seminaire-reunion/ : Organiser le dernier jour d'un séminaire résidentiel à La Réunion, entre la libération des chambres et le vol retour du soir (publié le 2026-10-15)
-- https://seminaire974.re/blog/programme-soirees-diners-seminaire-residentiel-reunion/ : Les soirées d'un séminaire résidentiel à La Réunion : dîner d'arrivée, soirée libre, sortie et clôture (publié le 2026-10-12)
-- https://seminaire974.re/blog/contrat-hotel-groupe-option-acompte-annulation-seminaire-reunion/ : Contrat d'hôtel de groupe pour un séminaire résidentiel à La Réunion : option, acomptes, attrition et annulation (publié le 2026-10-09)
-- https://seminaire974.re/blog/securite-sante-groupe-metropole-seminaire-reunion/ : Séminaire à La Réunion : les consignes de sécurité à donner à un groupe venu de métropole (publié le 2026-10-07)
 
 ## Sites liés
-- https://pullup.re — l'agence événementielle complète
-- https://teambuilding974.re — team building et journées de cohésion
-- https://hotesse-reunion.re — hôtesses d'accueil événementielles
-- https://arbredenoel974.re — arbres de Noël d'entreprise
-- https://animationenfant974.re/ — animations enfants
-- https://productionvideo974.re/ — production vidéo, aftermovies et campagnes avec créateurs de contenu locaux
-- https://karaoke974.re — soirées karaoké clé en main (animateur, sonorisation, micros, catalogue de titres), 470 € tout compris
-- https://soiree974.re — soirées d'entreprise, galas et soirées de fin d'année
+- https://pullup.re : l'agence événementielle complète
+- https://teambuilding974.re : team building et journées de cohésion
+- https://hotesse-reunion.re : hôtesses d'accueil événementielles
+- https://arbredenoel974.re : arbres de Noël d'entreprise
+- https://animationenfant974.re/ : animations enfants
+- https://productionvideo974.re/ : production vidéo, aftermovies et campagnes avec créateurs de contenu locaux
+- https://karaoke974.re : soirées karaoké clé en main (animateur, sonorisation, micros, catalogue de titres), 470 € tout compris
+- https://soiree974.re : soirées d'entreprise, galas et soirées de fin d'année
 - Pages Jaunes : https://www.pagesjaunes.fr/pros/63182047
 - Fiche Google : https://g.page/r/CYZGysYZgL8iEBM
 
 ## Réseaux sociaux
-- https://www.youtube.com/@pullupevenements — chaîne YouTube Pull Up Événements (vidéos de nos événements et campagnes)
-- https://www.facebook.com/pullupevenements/ — Facebook
-- https://www.instagram.com/pull_up_evenements — Instagram
-- https://www.tiktok.com/@pull.up.evenements — TikTok
-- https://www.linkedin.com/company/pullup-%C3%A9v%C3%A9nements/ — LinkedIn
+- https://www.youtube.com/@pullupevenements : chaîne YouTube Pull Up Événements (vidéos de nos événements et campagnes)
+- https://www.facebook.com/pullupevenements/ : Facebook
+- https://www.instagram.com/pull_up_evenements : Instagram
+- https://www.tiktok.com/@pull.up.evenements : TikTok
+- https://www.linkedin.com/company/pullup-%C3%A9v%C3%A9nements/ : LinkedIn
 
 ## L'agence
 Ce site est l'un des 8 sites de Pull Up Événements, agence événementielle à La Réunion. Fiche complète, rôle de chaque site, tarifs et contact : https://pullup.re/llms.txt (version détaillée : https://pullup.re/llms-full.txt).
